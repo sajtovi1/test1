@@ -1,0 +1,32 @@
+*{
+    margin: 0 auto;
+    padding: 0;
+    background-image: url('../gallery/galerija.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-size: 100% 100%;
+}
+#wrap{
+    margin: 0 auto;
+    width: 80%;
+}
+.gallery img {
+    width: 85%;
+    height: 85%;
+    
+}
+.gallery{
+    display: grid;
+    grid-template-columns: 20% 20% 20% 20%;
+    grid-gap: 2rem;
+    justify-items: center;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+}
+ 
+h1{
+    text-align: center;
+    color:black;
+}

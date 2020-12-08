@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Log in</title>
+    <link rel="stylesheet" href="css/stylee.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <style type="text/css">
+    p{
+      padding: 15px;
+      text-align: center;
+      
+    }
+    img{display: none;}
+   
+    </style>
+    <script type="text/javascript">
+    $(document).ready(function(){
+      $("#btn").focus(function(){
+        $("img").css("display", "inline").fadeOut(5000);
+      });
+
+    });
+    $(document).ready(function(){
+      $('p').hide();
+    });
+    $(document).ready(function(){
+      $(".kontakt").click(function(){
+        $("p.normal").toggle("slow");
+        
+      });
+    });
+
+    </script>
+</head>
+<body>
+    <div id="wrap">
+      <br>
+      <h1>PRIJAVA</h1><br><hr><br>
+      <br><br>
+      <div id="forma">
+      <form>
+        Ime i prezime <input type="text" name="ime" required><br>
+        <br>
+        Pol 
+        <select name="pol">
+            <option>Muški</option>
+            <option>Ženski</option>
+        </select><br>
+        <br>
+        Email <input type="text" name="mail" required><br>
+        <br>
+        Šifra <input type="password" name="sifra" required><br>
+        <br>
+        Da li volite da putujete? <br>
+        <input type="radio" name="polje1">Da<br>
+        <input type="radio" name="polje1">Ne<br>
+        <br>
+        Kada putujete birate? <br>   
+        <input type="checkbox" name="polje1">Gradove <br>
+        <input type="checkbox" name="polje2">Planine <br>
+        <input type="checkbox" name="polje3">Mora <br>
+        <br>
+       
+        <br>
+        <input type="button" value="Potvrdi" onclick="validacija()">
+        <input type="button" value="Obriši" onclick="funk()">
+        <br><br>
+        Ako imate bilo kakva pitanja kontaktirajte nas!
+        <button type="button" class="kontakt">Kontakt</button>
+        <p class="normal">
+          Za više informacija možete nas kontaktirati: <br>
+          -pozivom na broj: +381649090909 <br>
+          -putem email-a: blogwithus@gmail.com
+        </p> <br> <br>
+       
+        
+      
+      </form>
+      Hvala Vam! Pritisnite za <button id="btn">iznenađenje!</button>
+        <br>
+          <img src="fotografije/heart.jpg" alt="slika" id="slike">
+         <br>
+
+    </div> 
+    
+  </div>
+  <script src="script/script.js"></script>
+</body>
+</html>
